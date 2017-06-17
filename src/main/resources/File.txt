@@ -1,0 +1,2 @@
+Text file to read from Resource Folder.
+For program check ReadingFileFromResourceFolder class
