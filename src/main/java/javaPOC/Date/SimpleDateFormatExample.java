@@ -10,10 +10,16 @@ public class SimpleDateFormatExample {
 
 		Date curDate = new Date();
 
-		SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd");
+		SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd/hh");
 
 		String DateToStr = format.format(curDate);
 		System.out.println(DateToStr);
+
+		Date d=new Date();
+		SimpleDateFormat format1 = new SimpleDateFormat("E, yyyy/MM/dd/hh z");
+		String DateToStr1 = format1.format(d);
+		System.out.println(DateToStr1);
+
 
 		format = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
 		DateToStr = format.format(curDate);
