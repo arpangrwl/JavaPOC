@@ -5,23 +5,25 @@ public class BinaryTree {
 
     public static void main(String[] args) {
         BinaryTree theTree = new BinaryTree();
-        theTree.addNode(50, "Boss");
-        theTree.addNode(25, "Vice President");
-        theTree.addNode(15, "Office Manager");
-        theTree.addNode(30, "Secretary");
-        theTree.addNode(75, "Sales Manager");
-        theTree.addNode(85, "Salesman 1");
+        theTree.addNode(20, "Boss");
+        theTree.addNode(10, "Vice President");
+        theTree.addNode(30, "Office Manager");
+        theTree.addNode(5, "Secretary");
+        theTree.addNode(15, "Sales Manager");
+        theTree.addNode(30, "Salesman 1");
+        theTree.addNode(25, "Salesman 2");
+        theTree.addNode(35, "Salesman 3");
         // Different ways to traverse binary trees
-        // theTree.inOrderTraverseTree(theTree.root);
+         theTree.inOrderTraverseTree(theTree.root);
         // theTree.preorderTraverseTree(theTree.root);
         // theTree.postOrderTraverseTree(theTree.root);
         // Find the node with key 75
-        System.out.println("\nNode with the key 75");
-        System.out.println(theTree.findNode(75));
-        System.out.println("Remove Key 25");
-        theTree.remove(25);
-        System.out.println(theTree.findNode(25));
-        theTree.inOrderTraverseTree(theTree.root);
+//        System.out.println("\nNode with the key 75");
+//        System.out.println(theTree.findNode(75));
+//        System.out.println("Remove Key 25");
+//        theTree.remove(25);
+//        System.out.println(theTree.findNode(25));
+//        theTree.inOrderTraverseTree(theTree.root);
     }
 
     public void addNode(int key, String name) {
@@ -70,11 +72,11 @@ public class BinaryTree {
     public void inOrderTraverseTree(Node focusNode) {
         if (focusNode != null) {
             // Traverse the left node
-            preorderTraverseTree(focusNode.leftChild);
+            inOrderTraverseTree(focusNode.leftChild);
             // Visit the currently focused on node
             System.out.println(focusNode);
             // Traverse the right node
-            preorderTraverseTree(focusNode.rightChild);
+            inOrderTraverseTree(focusNode.rightChild);
         }
     }
 
