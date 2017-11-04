@@ -1,4 +1,4 @@
-package javaPOC.Lambda;
+package javaPOC.Java8.Lambda;
 
 @FunctionalInterface
 interface I{

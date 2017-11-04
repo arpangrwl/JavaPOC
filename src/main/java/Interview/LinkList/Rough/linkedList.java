@@ -140,8 +140,6 @@ public class linkedList<E> {
     }
 
     public void reverseLinkList(){
-
-        boolean flag = true;
         if(head == null)
             return;
 

@@ -1,4 +1,4 @@
-package javaPOC.Lambda;
+package javaPOC.Java8.Lambda;
 
 /**
  * Created by Arpan on 9/10/17.

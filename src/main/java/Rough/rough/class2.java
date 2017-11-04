@@ -1,18 +1,17 @@
 package Rough.rough;
 
-import java.util.HashMap;
-
 /**
  * Created by Arpan on 7/16/17.
  */
 public class class2 {
 
-    public static void function(HashMap<String, Integer> hm) {
-        hm.put("C",3);
-        hm.put("d",4);
-        hm.put("e",5);
-        hm.put("f",6);
+    public static void main(String[] args) {
 
+        String str = "azAZ";
+        char arr[] = str.toCharArray();
+        for(int i = 0; i < arr.length ; i++){
 
+            System.out.println((int)arr[i]);
+        }
     }
 }
