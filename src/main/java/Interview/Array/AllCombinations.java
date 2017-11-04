@@ -8,7 +8,6 @@ public class AllCombinations {
         AllCombinations a = new AllCombinations();
         int[] A = new int[B.length];
         a.combinations(A, 0);
-
     }
 
     public void combinations(int[] A, int x) {
